@@ -1,0 +1,98 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@media screen and (max-width: 571px) {
+
+    .parallax {
+        position: relative;
+        width: 100%;
+        background-image: url("girlsit1920.jpg");
+        min-height: 600px;
+        background-attachment: fixed;
+        background-size: cover;
+        align-items: center;
+    }
+    
+    #cardparallax {
+        left: 15%;
+        position: relative;
+        float: center;
+        align-items: center;
+        width: 70%;
+        float: center;
+        top: 50px;
+        background-color: rgba(0, 0, 0, 0.448);
+    }
+}
+
+@media screen and (min-width: 572px) {
+
+    .parallax {
+        position: relative;
+        width: 100%;
+        background-image: url("girlsit1920.jpg");
+        min-height: 410px;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #cardparallax {
+        position: relative;
+        float: center;
+        width: 350px;
+        float: center;
+        margin-right: 5px;
+        margin-left: 5px;
+        top: 50px;
+        background-color: rgba(0, 0, 0, 0.448);
+        align-items: center;
+    }
+}
+
+#cardparallax {
+    color: rgb(255, 255, 255);
+    position: flex;
+    margin-top: 12%;
+}
+
+#cardparallax:hover {
+    transform: translateY(15px);
+    background-color: white;
+    color: black;
+}
+
+#btnparallax {
+    background-color: #076b959c;
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    float: right;
+    border: 1px solid #fff;
+    transition: all 0.5s;
+    outline: 8px ridge rgba(170, 50, 220, 0.6);
+}
+
+#btnparallax:hover {
+    text-shadow: 3px orange;
+    color: orange;
+    font-size: 20px;
+    border: 3px outset orange;
+    padding: 6px 6px;
+}

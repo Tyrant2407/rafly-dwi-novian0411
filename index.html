@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgb(255, 255, 255)">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-size: 26px; font-family: arial">
+                <!-- atau gunakan <h1 style="font-size: 25px">Rizky Putra</h1> -->
+                <img src="logonav.jpeg" alt="gundar" height="45px"
+                    id="logonav">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                style="background-color: rgb(186, 184, 184);height: 40px;width: 55px">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text" tabindex="1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel"
+                style="background-color: rgba(255, 255, 255, 0.926);width: 220px">
+                <div class="offcanvas-header" style="background-color: black;color: white">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="font-size: 30px">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item" style="font-size: 25px; padding-right: 1rem;">
+                            <a class="nav-link active" id="navhome" aria-current="page"
+                                href="https://tyrant2407.github.io/Tyrant2407_loading.github.io/"
+                                style="color: rgb(0, 0, 0)"><i class="icon fa fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item" style="font-size: 25px; padding-right: 1rem; color: white">
+                            <a class="nav-link" href="https://rizkyperdana17.blogspot.com/"><i
+                                    class="icon fa fa-globe"
+                                        ></i> Blog</a>
+                        </li>
+                        <li class="nav-item" style="font-size: 25px; padding-right: 1rem">
+                            <a class="nav-link"
+                                href="https://rizkyperdana17.blogspot.com/2021/10/pengenalan-diri-rizky-putra-perdana.html"><i
+                                    class="icon fa fa-envelope"></i>About Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="data:image/jpeg;base64,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"
+                    class="d-block w-100" alt="image1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://media.istockphoto.com/id/628098330/id/vektor/rendah-poli-nature-landscape-bagus-sebagai-wallpaper-desain-template.jpg?s=612x612&w=0&k=20&c=47k7f6cDW2Z51NOakGJggcGJR7kjIT5MKDTjNaUFhrM="
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- introduction -->
+    <div class="intro text-center" style="margin-top: 100px">
+        <img src="https://sman48-jkt.sch.id/wp-content/uploads/2021/07/cropped-cropped-cropped-cropped-EXpbXvsS_400x400-removebg-preview-2-1.png"
+            alt="Gundar" width="200" class="rounded-circle" style="width: 200" />
+        <h1>RAFLY PUTRA DWINOVIAN</h1>
+        <p style="font-size: 25px">Siswa SMAN 48 Jakarta</p>
+        <a class="btn btn-primary btn-lg" id="btnintro" href="#" role="button"
+            style="width: 150px;height: 52px;margin-left: 17px;">Learn more </a>
+        <h1 style="margin-bottom: 340px"></h1>
+    </div>
+
+
+    <!-- parallax image card -->
+    <section class="parallax">
+        <div class="container">
+
+            <div class="row">
+                <div class="card" id="cardparallax">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Special title treatment</h5>
+                        <hr size="8px" color="blue">
+                        <p class="card-text"></p>
+                        <a href="#" class="button" id="btnparallax">&nbsp;&#8594&nbsp;</a>
+                    </div>
+                </div>
+
+                <div class="card" id="cardparallax">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Special title treatment</h5>
+                        <hr size="8px" color="blue">
+                        <p class="card-text"></p>
+                        <a href="#" class="button" id="btnparallax">&nbsp;&#8594&nbsp;</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End parallax image card -->
+
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+        </li>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L40,144C80,160,160,192,240,181.3C320,171,400,117,480,117.3C560,117,640,171,720,165.3C800,160,880,96,960,80C1040,64,1120,96,1200,96C1280,96,1360,64,1400,48L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    </ul>
+
+
+</body>
+
+</html>
