@@ -5,6 +5,10 @@ html {
     display: relative;
 }
 
+body {
+    background-color: rgb(186, 184, 184);  
+    
+}
 .container {
     display: flex;
     justify-content: center;
