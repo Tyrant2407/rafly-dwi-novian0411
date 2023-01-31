@@ -12,6 +12,7 @@ html {
     position: relative;
 }
 
+
 @media screen and (max-width: 571px) {
 
     .parallax {
@@ -33,6 +34,30 @@ html {
         float: center;
         top: 50px;
         background-color: rgba(0, 0, 0, 0.448);
+    }
+
+    .logo1 {
+        opacity: 0;
+        width: 0px;
+    }
+
+    .logo2 {
+        width: 300px;
+        margin-top: 60px;
+
+    }
+    
+    .title {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .captionss {
+        font-size: 20px;
+    }
+
+    .navbar {
+        width: 100%;
     }
 }
 
@@ -57,6 +82,10 @@ html {
         top: 50px;
         background-color: rgba(0, 0, 0, 0.448);
         align-items: center;
+    }
+
+    .captionss {
+        font-size: 25px;
     }
 }
 
